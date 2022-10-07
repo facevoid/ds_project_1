@@ -6,7 +6,7 @@ import os
 from base64 import b64encode
 
 
-CLIENT_FILE_DIR = 'client_file_dir'
+CLIENT_FILE_DIR = config_dict['client_file_dir']
 
 def upload(s):
     filename = input('Please enter the file name from your directory you want to upload \n')

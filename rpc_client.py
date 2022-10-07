@@ -20,7 +20,7 @@ class NumpyEncoder(json.JSONEncoder):
             return obj.tolist()
         return json.JSONEncoder.default(self, obj)
 
-CLIENT_FILE_DIR = 'client_file_dir'
+CLIENT_FILE_DIR = config_dict['client_file_dir']
 
 def calculate_pi(s):
     message = json.dumps({"func_name": 'calculate_pi'}).encode()
